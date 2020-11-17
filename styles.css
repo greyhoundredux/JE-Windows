@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 0px 30px;
+    color: #ededed;
+}
+
+.nav-logo {
+    font-size: 28px;
+}
+
+.nav-logo span {
+    color: black;
+}
+
+.j-span {
+    padding: 0.2em;
+    background-color: #ff8121;
+}
+
+.e-span {
+    padding: 0.2em;
+    background-color: #696969;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+    border-bottom: 2px ;
+}
+
+a {
+    padding: 4px;
+    text-decoration: none;
+    color: #ededed;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #2b2b2b;
+}
+
+a:hover {
+    color: #ff8121;
+    border-color: #ff8121;
+}
+
+.contact-button {
+    background-color: #ff8121;
+    color: #ededed;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px #ff8121 solid;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ededed;
+    color: #ff8121;
+}
+
+/* LANDING */
+
+.landing-pic-container {
+    overflow: hidden;
+    width: 100%;
+    max-height: 600px;
+    background: #2b2b2b;
+    position: relative;
+    border-bottom: 4px solid #ff8121;
+}
+
+.landing-pic {
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.landing-text {
+    color: #ededed;
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-logo {
+    font-size: 80px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.landing-logo .j-logo {
+    padding: 0.2em;
+    background-color: #ff8121;
+}
+
+.landing-logo .e-logo {
+    padding: 0.2em;
+    background-color: #696969;
+}
+
+.landing-text .james-english {
+    color: #ff8121;
+    letter-spacing: 3px;
+    font-size: 46px;
+    border-bottom: 5px solid #ff8121;
+    margin-bottom: 10px;
+}
+
+/* WELCOME */
+
+.welcome {
+    margin: 80px 30px;
+    padding: 40px 10px;
+    text-align: center;
+    border: 4px #ff8121 dashed;
+}
+
+.welcome p {
+    margin: 10px;
+}
+
+.welcome-header {
+    color: #ff8121;
+    font-size: 26px;
+}
+
+.welcome-text strong {
+    font-weight: normal;
+    color: #ff8121;
+}
+
+/* SERVICES */
+
+.services-container {
+    background-color: #2b2b2b;
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.services {
+    margin: 60px 0px;
+}
+
+.services-header {
+    color: #ff8121;
+    font-size: 36px;
+    margin: 30px;
+}
+
+.cleaning-card {
+    background-color: #ededed;
+    margin: 30px;
+    padding: 10px;
+    border-top: 10px #ff8121 solid;
+    box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+}
+
+.cleaning-card h2,
+.service-card h2 {
+    color: #ff8121;
+}
+
+.cleaning-card p {
+    margin: 10px;
+}
+
+.other-card-text {
+    color: #ededed;
+    margin: 10px;
+}
+
+.other-cards {
+    margin: auto;
+    display: flex;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #ededed;
+    padding: 10px;
+    margin: 10px;
+    border-top: 10px #ff8121 solid;
+    max-width: 800px;
+    flex: 1;
+    box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+}
+
+@media only screen and (max-width: 970px) {
+    ul {
+        width: auto;
+    }
+    .nav-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .landing-pic-container {
+        display: flex;
+        align-items: center;
+    }
+    .landing-text {
+        flex-direction: row;
+    }
+    .landing-logo {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .other-cards {
+        flex-direction: column;
+    }
+    .service-card {
+        margin: 30px;
+        padding: 30px 0px;
+    }
+}
